@@ -1,0 +1,64 @@
+/* contacto */
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.conta{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#botton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
+}
+#botton:hover{
+    cursor: pointer;
+}
+.info-form h3{
+    padding: 15px;
+    padding-bottom: 2%;
+
+}
+
+.info-form a{
+    padding: 20px;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* contacto */
+
+@media (max-width:480px){
+    form{
+     width: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .info-form a{
+        display: inline-block;
+    }
+}

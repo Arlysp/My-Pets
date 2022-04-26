@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&family=Cairo:wght@600&family=Montserrat&family=Roboto&didisplay=swap");
+/* normalize */
+*::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+/* variables */
+:root {
+  --principal:#5945ca;
+  --segundary:#fff;
+  --font-principal:'Roboto', sans-serif; }
+
+/* header */
+header {
+  width: 100%;
+  height: 50px;
+  background: #5945ca;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+
+.contenedor {
+  width: 98%;
+  margin: auto; }
+
+h1 {
+  float: left; }
+
+header .contenedor {
+  display: table; }
+
+section {
+  width: 100%;
+  margin-bottom: 25px; }
+
+/* menu */
+#menu-bar {
+  display: none; }
+
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer; }
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #5945ca;
+  transition: all 0.5s;
+  transform: translateX(-100%); }
+
+.menu a {
+  display: block;
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.3); }
+
+#menu-bar:checked ~ .menu {
+  transform: translateX(0%); }
+
+/* banner */
+#banner {
+  margin-top: 50px;
+  position: relative; }
+
+#banner img {
+  width: 100%;
+  height: 100%; }
+
+#banner .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff; }
+
+#banner h2 {
+  font-size: 28px; }
+
+#banner a {
+  display: block;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px;
+  margin-top: 10px;
+  border: 3px solid #fff; }
+
+#banner a:hover {
+  background: rgba(51, 51, 51, 0.5); }
+
+#bienvenidos {
+  text-align: center;
+  color: black; }
+
+/* blog */
+#blog h3, h4 {
+  text-align: center; }
+
+#blog .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+#blog article {
+  margin: 15px; }
+
+#blog img {
+  width: 100%;
+  max-width: 280px; }
+
+/* info-pet */
+#info {
+  background: #5945ca;
+  color: #fff;
+  text-align: center;
+  padding: 20px; }
+
+#info .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.info-pet {
+  margin: 20px; }
+
+.info-pet img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 7px solid #fff; }
+
+/* contacto */
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px 30px;
+  margin-top: 20px;
+  border-radius: 7px; }
+
+.conta {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 17px; }
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#botton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px; }
+
+#botton:hover {
+  cursor: pointer; }
+
+.info-form h3 {
+  padding: 15px;
+  padding-bottom: 2%; }
+
+.info-form a {
+  padding: 20px;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  font-weight: 300; }
+
+/* footer */
+footer .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px; }
+
+.copy {
+  font-size: 40px; }
+
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 28px; }
+
+.sociales a {
+  color: #333;
+  text-decoration: none; }
+
+/* pages nosotros */
+.nosotros {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: 200px auto;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+  transition: all .3s ease-in-out;
+  cursor: pointer; }
+
+.nosotros:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 37px black; }
+
+.nosotros img {
+  width: 100%; }
+
+.nosotros .parla {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
+
+/* mascotas */
+.mascota {
+  width: 100%;
+  padding: 20px; }
+
+/* Tienda */
+.tienda {
+  padding: 60px; }
+
+/* menu */
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex; }
+  .menu a {
+    border: none; }
+  header label {
+    display: none; }
+  .contenedor {
+    width: 1000px; } }
+
+/* banner */
+@media (min-width: 480px) {
+  #banner h2 {
+    font-size: 40px; }
+  #banner a {
+    margin-top: 25px; } }
+
+@media (min-width: 768px) {
+  #banner {
+    height: auto;
+    overflow: hidden; }
+  #banner img {
+    height: auto;
+    margin-top: -100px; } }
+
+@media (min-width: 1024px) {
+  #banner img {
+    margin-top: -200px; } }
+
+@media (min-width: 1024px) {
+  #blog img {
+    width: auto; } }
+
+/* info-pet */
+@media (min-width: 480px) {
+  .info-pet {
+    width: 40%; } }
+
+@media (min-width: 1024px) {
+  .info-pet {
+    width: auto; } }
+
+/* contacto */
+@media (max-width: 480px) {
+  form {
+    width: 100%; } }
+
+@media (min-width: 1024px) {
+  .info-form a {
+    display: inline-block; } }
+
+/* footer */
+@media (min-width: 768px) {
+  .sociales {
+    width: auto; }
+  footer .contenedor {
+    justify-content: space-between; } }
